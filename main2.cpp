@@ -1,4 +1,6 @@
 // Copyright 2015 Malthe Høj-Sunesen
+// This file is for testing purposes only! Full changes might happen;
+// DO NOT RELY ON THIS DOCUMENT!
 #include <iostream>
 
 using std::cout;
