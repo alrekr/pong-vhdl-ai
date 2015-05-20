@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project (AI)
+add_executable(ai main.cpp)
+#add_executable(tester main2.cpp)
+add_definitions(-DDEBUG)
