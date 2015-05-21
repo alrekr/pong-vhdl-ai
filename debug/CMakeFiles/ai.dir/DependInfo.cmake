@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/alrekr/git/vhdl/ai/main.cpp" "/home/alrekr/git/vhdl/ai/build/CMakeFiles/ai.dir/main.cpp.o"
+  "/home/alrekr/git/vhdl/ai/main.cpp" "/home/alrekr/git/vhdl/ai/debug/CMakeFiles/ai.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

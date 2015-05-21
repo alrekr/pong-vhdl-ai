@@ -50,7 +50,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/alrekr/git/vhdl/ai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alrekr/git/vhdl/ai/build
+CMAKE_BINARY_DIR = /home/alrekr/git/vhdl/ai/debug
 
 #=============================================================================
 # Target rules for target CMakeFiles/ai.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/alrekr/git/vhdl/ai/build
 CMakeFiles/ai.dir/all:
 	$(MAKE) -f CMakeFiles/ai.dir/build.make CMakeFiles/ai.dir/depend
 	$(MAKE) -f CMakeFiles/ai.dir/build.make CMakeFiles/ai.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/vhdl/ai/build/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/vhdl/ai/debug/CMakeFiles  1
 	@echo "Built target ai"
 .PHONY : CMakeFiles/ai.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/ai.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ai.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/vhdl/ai/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/vhdl/ai/debug/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/ai.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/vhdl/ai/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alrekr/git/vhdl/ai/debug/CMakeFiles 0
 .PHONY : CMakeFiles/ai.dir/rule
 
 # Convenience name for target.

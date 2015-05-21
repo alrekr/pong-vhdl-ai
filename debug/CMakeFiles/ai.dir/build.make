@@ -38,7 +38,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/alrekr/git/vhdl/ai
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/alrekr/git/vhdl/ai/build
+CMAKE_BINARY_DIR = /home/alrekr/git/vhdl/ai/debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ai.dir/depend.make
@@ -51,7 +51,7 @@ include CMakeFiles/ai.dir/flags.make
 
 CMakeFiles/ai.dir/main.cpp.o: CMakeFiles/ai.dir/flags.make
 CMakeFiles/ai.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/vhdl/ai/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/alrekr/git/vhdl/ai/debug/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ai.dir/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ai.dir/main.cpp.o -c /home/alrekr/git/vhdl/ai/main.cpp
 
@@ -97,6 +97,6 @@ CMakeFiles/ai.dir/clean:
 .PHONY : CMakeFiles/ai.dir/clean
 
 CMakeFiles/ai.dir/depend:
-	cd /home/alrekr/git/vhdl/ai/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alrekr/git/vhdl/ai /home/alrekr/git/vhdl/ai /home/alrekr/git/vhdl/ai/build /home/alrekr/git/vhdl/ai/build /home/alrekr/git/vhdl/ai/build/CMakeFiles/ai.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alrekr/git/vhdl/ai/debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alrekr/git/vhdl/ai /home/alrekr/git/vhdl/ai /home/alrekr/git/vhdl/ai/debug /home/alrekr/git/vhdl/ai/debug /home/alrekr/git/vhdl/ai/debug/CMakeFiles/ai.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ai.dir/depend
 

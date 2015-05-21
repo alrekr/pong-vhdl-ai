@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/alrekr/git/vhdl/ai")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/alrekr/git/vhdl/ai/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/alrekr/git/vhdl/ai/prod")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/ai.dir/main.cpp.o  -o ai -rdynamic 

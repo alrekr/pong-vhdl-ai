@@ -1,1 +1,0 @@
-/home/alrekr/git/vhdl/ai/build/CMakeFiles/ai.dir
