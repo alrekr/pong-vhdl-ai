@@ -36,6 +36,7 @@ int main() {
     cout << "Bat location: " << x_intersect << endl;
     y_pos = 250;
 #endif  // DEBUG
+
     while (1) {
         a = 0;
         b = 0;
@@ -49,10 +50,10 @@ int main() {
 #endif  // PROD
 
 #ifdef DEBUG
-
         if (i >= 25) {
             break;
         }
+
         x1 = x_arr[i];
         y1 = y_arr[i];
         cout << "x1, y1: " << x1 << ", " << y1 << endl;
@@ -67,16 +68,20 @@ int main() {
         y_intersect = static_cast<int>(a * x_intersect + b + 40) % 600;
 
         if (y_pos < y_intersect && y_pos > 50) {
+
 #ifdef DEBUG
             cout << "Ball position: (" << setw(3) << x1 << ", " << setw(3)
                     << y1 << ")\tIntersect: " << y_intersect << "\ty_pos: "
                     << y_pos << "\tMoving bat up" << endl;
             y_pos += 10;
 #endif  // DEBUG
+
 #ifdef PROD
             UART_OUT = 'u';  // This might need be changed to what Pong expects
 #endif  // PROD
+
         } else if (y_pos > y_intersect  && y_pos < 750) {
+
 #ifdef DEBUG
             cout << "Ball position: (" << setw(3) << x1 << ", " << setw(3)
                     << y1 << ")\tIntersect: " << y_intersect << "\ty_pos: "
@@ -84,18 +89,23 @@ int main() {
             y_pos -= 10;
 
 #endif  // DEBUG
+
 #ifdef PROD
             UART_OUT = 'd';  // This might need be changed to what Pong expects
 #endif  // PROD
+
         } else {
+
 #ifdef DEBUG
             cout << "Ball position: (" << setw(3) << x1 << ", " << setw(3)
                     << y1 << ")\tIntersect: " << y_intersect << "\ty_pos: "
                     << y_pos << "\tNot moving bat" << endl;
 #endif  // DEBUG
+
 #ifdef PROD
             UART_OUT = 'n';  // This might need be changed to what Pong expects
 #endif  // PROD
+
         }
     }
 }
