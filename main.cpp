@@ -74,7 +74,6 @@ int main() {
             y_pos += 10;
 #endif  // DEBUG
 #ifdef PROD
-            cout << "Move up" << endl;  // REMOVE THIS LINE BEFORE PROD!!!
             UART_OUT = 'u';  // This might need be changed to what Pong expects
 #endif  // PROD
         } else if (y_pos > y_intersect  && y_pos < 750) {
@@ -86,7 +85,6 @@ int main() {
 
 #endif  // DEBUG
 #ifdef PROD
-            cout << "Move down" << endl;  // REMOVE THIS LINE BEFORE PROD!!!
             UART_OUT = 'd';  // This might need be changed to what Pong expects
 #endif  // PROD
         } else {
@@ -96,7 +94,6 @@ int main() {
                     << y_pos << "\tNot moving bat" << endl;
 #endif  // DEBUG
 #ifdef PROD
-            cout << "Don't move" << endl;  // REMOVE THIS LINE BEFORE PROD!!!
             UART_OUT = 'n';  // This might need be changed to what Pong expects
 #endif  // PROD
         }
