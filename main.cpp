@@ -13,8 +13,9 @@ using std::setw;
 the 'AI' work. */
 #define BAT_COORDS  0x00000000  // should be addr to mem location/FPGA interface
 #define BALL_COORDS 0x00000000  // should be addr to mem location/FPGA interface
-char UART_OUT;
-char active = 'y'; //must be updated in while loop
+#define ACTIVE 0x00000000  // should be addr to mem location/FPGA interface
+char UART_OUT;  // should be addr to UART out (obviously)
+int16_t active = 1; //must be updated in while loop
 
 int main() {
     int16_t x1 = 0, x2 = 0, y1 = 0, y2 = 0;
@@ -38,8 +39,10 @@ int main() {
     y_pos = 250;
 #endif  // DEBUG
 
+    active = ACTIVE;
+
     while (1) {
-        if (char = 'y') {
+        if (active == 1) {
 
             a = 0;
             b = 0;
@@ -110,6 +113,7 @@ int main() {
 #ifdef PROD
                 UART_OUT = 'n';  // This might need be changed to what Pong expects
 #endif  // PROD
+                active = ACTIVE;
             }
         }
     }
